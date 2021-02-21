@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { TextInputProps, StyleProp, TextStyle, ViewStyle, TextProps } from "react-native";
+import { TextInputProps, StyleProp, TextStyle, ViewStyle, TextProps, ColorValue } from "react-native";
 import {
   CountryCode,
   CallingCode,
@@ -24,6 +24,7 @@ export interface PhoneInputProps {
   textInputProps?: TextInputProps;
   textProps?: TextProps;
   textInputStyle?: StyleProp<TextStyle>;
+  placeholderTextColor?: ColorValue;
   codeTextStyle?: StyleProp<TextStyle>;
   flagButtonStyle?: StyleProp<ViewStyle>;
   countryPickerButtonStyle?: StyleProp<ViewStyle>;
